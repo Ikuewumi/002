@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+
+header {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 3rem;
+}
+
+header h1 {
+    font-family: 'Carter One';
+}
+
+header i {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+nav {
+    position: fixed;
+    top: 50%;
+    right: 0%;
+    transform: translate(100% , -50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: hsl(189, 37%, 48%);
+    padding: 1rem;
+    border-radius: 7px;
+    z-index: 500;
+    transition: 1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+nav ul li#close {
+    background: hsl(0, 0%, 0%);
+    color: hsl(0, 90%, 49%);
+}
+
+nav ul li {
+    cursor: pointer;
+    padding: .5rem;
+    background: rgb(207, 202, 185);
+    color: hsl(0, 0%, 0%);
+    border-radius: 7px;
+    font-family: 'Poppins';
+    font-size: 1rem;
+}
+
+nav ul li + li {
+    margin-top: 0.5rem;
+}
+
+
+main {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+    padding: 0 2rem;
+    flex-wrap: wrap;
+}
+
+section.content {
+    min-width: 300px;
+    max-width: 60vw;
+}
+
+section.content h3 {
+    font-family: 'Poppins';
+    line-height: 0.8;
+    font-size: 1.2rem;
+}
+
+section.content p {
+    font-family: 'Montserrat';
+    line-height: 1.3;
+    font-size: 1rem;
+}
+
+aside {
+    height: inherit;
+}
+
+aside ul {
+    min-width: 250px;
+    max-width: 20vw;
+    padding: 2rem 0;
+    text-align: left;
+    font-family: 'Noto Sans JP';
+    font-size: 1rem;
+    line-height: 1.3;
+    text-decoration: underline;
+    font-weight: 700;
+    color: hsl(197, 74%, 21%);
+}
+
+aside ul li {
+    cursor: pointer;
+}
+
+aside ul li + li {
+    margin-top: 0.5rem;
+}
+
+section.carousel {
+    padding: 2rem 0;
+    gap: 0.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+section.carousel i {
+    z-index: 100;
+    cursor: pointer;
+}
+
+section.carousel .system {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+section.carousel .img-box {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    transition: 1s cubic-bezier(.44,.43,.96,1.42);
+}
+
+section.carousel .img-box img {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+section.lists {
+    width: 100vw;
+    padding: 1rem;
+}
+
+section.lists ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: disc;
+}
+
+section.lists ul li {
+    min-width: 300px;
+    cursor: pointer;
+    line-height:3;
+    max-width: 80vw;
+    padding: 1rem 0.4rem;
+    font-family: 'Noto Sans JP';
+    font-size: 1rem;
+    line-height: 1.3;
+    text-decoration: underline;
+    font-weight: 700;
+    color: hsl(197, 74%, 21%);
+}
+
+
+footer {
+    padding: 2rem 1rem;
+    font-family: 'Poppins';
+    line-height: 2;
+    font-size: 1.2rem;
+}
